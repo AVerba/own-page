@@ -10,6 +10,7 @@ const NotFoundPageView = lazy(() =>
 );
 const ContactsView = lazy(() => import('../views/ContactsView/ContactsView'));
 const ProjectsView = lazy(() => import('../views/ProjectsView/ProjectsView'));
+
 export const App = () => {
   return (
     <>
