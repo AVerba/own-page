@@ -5,7 +5,6 @@ import { LanguageMenu } from '../LanguageMenu/LanguageMenu';
 export const UserMenu = () => {
   return (
     <div className={styles.container}>
-      <ThemeSwitch />
       <LanguageMenu />
     </div>
   );
