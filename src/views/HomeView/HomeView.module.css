@@ -7,10 +7,12 @@
   height: 100%;
   background-size: cover;
 }
+
 .content {
   display: flex;
   padding: 30px 15px;
 }
+
 .info {
   position: absolute;
   top: 45%;
@@ -20,15 +22,18 @@
   flex-direction: column;
   align-items: center;
 }
+
 .nameTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
   color: #ffffff;
   font-weight: 700;
 }
+
 .mainTitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: #ffffff;
+  margin-bottom: 70px;
 }

@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import Nav from 'react-bootstrap/Nav';
 
 import { NavLink } from 'react-router-dom';
+import { SocialBar } from '../../components/SocialBar';
 
 const HomeView = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const HomeView = () => {
           <h2 className={styles.mainTitle}>
             Engineer + Junior Full Stack Developer
           </h2>
+          <SocialBar />
         </div>
       </Container>
     </div>
