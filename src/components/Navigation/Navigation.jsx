@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import HomeIcon from '@mui/icons-material/Home';
 import Nav from 'react-bootstrap/Nav';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -13,32 +14,23 @@ export const Navigation = () => {
 
   return (
     <Nav variant="pills" activeKey={active} onSelect={handleSelect}>
-      <Nav.Item className={styles.item}>
-        <Nav.Link as={NavLink} className={styles.link} eventKey="Home" to="/">
+      <Nav.Item className={styles.NavItem}>
+        <NavLink className={styles.item} eventKey="Home" to="/">
+          <HomeIcon className={styles.icon} />
           Home
-        </Nav.Link>
+        </NavLink>
       </Nav.Item>
-      <Nav.Item className={styles.item}>
-        <Nav.Link
-          as={NavLink}
-          className={styles.link}
-          eventKey="Projects"
-          to="/projects"
-        >
+      <Nav.Item className={styles.NavItem}>
+        <NavLink className={styles.item} eventKey="Contacts" to="/contacts">
+          <ContactPageIcon className={styles.icon} />
+          About me
+        </NavLink>
+      </Nav.Item>
+      <Nav.Item className={styles.NavItem}>
+        <NavLink className={styles.item} eventKey="Projects" to="/projects">
           <TextSnippetIcon className={styles.icon} />
           Projects
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item className={styles.item}>
-        <Nav.Link
-          as={NavLink}
-          className={styles.link}
-          eventKey="Contacts"
-          to="/contacts"
-        >
-          <ContactPageIcon className={styles.icon} />
-          Contacts
-        </Nav.Link>
+        </NavLink>
       </Nav.Item>
     </Nav>
   );
